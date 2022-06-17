@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1a1c28;
+  place-items: center;
+  display: inline grid;
+}
+
+/* nav-favicon */
+nav img {
+  padding: 0;
+  margin: 0;
+  border: 1px solid;
+  border-radius: 50px;
+  border-color: #ffffff;
+}
+main {
+  display: grid;
+  width: 50%;
+  margin: auto;
+  height: 50vh;
+  gap: 10px;
+  grid-template-areas:
+    "one one one two"
+    "one one one two"
+    "five five three three"
+    "five five four four";
+}
+main div {
+  padding: 1.5em;
+}
+.box1 {
+  background-color: #eb5020;
+  grid-area: one;
+}
+.box2 {
+  background-color: #ffa401;
+  grid-area: two;
+}
+.box3 {
+  background-color: #01aefd;
+  grid-area: three;
+}
+.box4 {
+  background-color: #01aefd;
+  grid-area: four;
+}
+.box5 {
+  background-color: #05aa42;
+  grid-area: five;
+}

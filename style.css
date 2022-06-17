@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body section */
+body {
+  max-width: 1440px;
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  font-size: 15px;
+}
+/* nav-favicon */
+nav img {
+  padding: 0;
+  margin: 0;
+  border: 1px solid;
+  border-radius: 50px;
+  border-color: hsl(179, 100%, 13%);
+}
+
+main {
+  width: 50%;
+  margin: auto;
+  display: flex;
+}
+
+/* Individual sections */
+.Sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.Suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.Lux {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* icons */
+img {
+  margin: 20px;
+  padding: 5px;
+}
+
+/* headings and paragraphs */
+h1 {
+  margin: 20px;
+  padding: 5px;
+  font-family: "Big Shoulders Display";
+  color: hsl(0, 0%, 95%);
+}
+
+p {
+  margin: 20px;
+  padding: 5px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca";
+  font-size: 0.9em;
+}
+
+/* buttons */
+button {
+  margin: 40px 30px;
+  padding: 15px;
+  background: hsl(0, 0%, 95%);
+  border-radius: 50px;
+  border: none;
+  font-family: "Lexend Deca";
+}
+
+.Sedans button {
+  color: hsl(31, 77%, 52%);
+}
+
+.Suvs button {
+  color: hsl(184, 100%, 22%);
+}
+
+.Lux button {
+  color: hsl(179, 100%, 13%);
+}
+
+/* button hover */
+button:hover {
+  text-decoration: none;
+  border: 2px solid;
+  cursor: pointer;
+  border-radius: 50px;
+  font-family: "Lexend Deca";
+}
+
+.Sedans button:hover {
+  background-color: transparent;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.Suvs button:hover {
+  background-color: transparent;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.Lux button:hover {
+  background-color: transparent;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+/* Media Queries and Responsiveness */
+
+/*Tablets*/
+@media screen and (max-width: 1000px) {
+  main {
+    width: 75%;
+  }
+}
+
+/*Mobile Phones*/
+@media screen and (max-width: 425px) {
+  main {
+    width: 100%;
+    flex-direction: column;
+  }
+}
