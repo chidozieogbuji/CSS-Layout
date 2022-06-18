@@ -1,25 +1,41 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
+  max-width: 1440px;
   background-color: #1a1c28;
   place-items: center;
   display: inline grid;
 }
 
-/* nav-favicon */
-nav img {
+header {
+  background-color: burlywood;
+  margin-bottom: 50px;
   padding: 0;
-  margin: 0;
-  border: 1px solid;
-  border-radius: 50px;
-  border-color: #ffffff;
+  display: flex;
+  justify-content: center;
 }
+
+header button {
+  background-color: #f2f2f2;
+  text-decoration: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
 main {
   display: grid;
   width: 50%;
+  padding: 10px;
   margin: auto;
   height: 50vh;
   gap: 10px;
@@ -29,26 +45,48 @@ main {
     "five five three three"
     "five five four four";
 }
+
 main div {
   padding: 1.5em;
 }
+
 .box1 {
   background-color: #eb5020;
   grid-area: one;
 }
+
 .box2 {
   background-color: #ffa401;
   grid-area: two;
 }
+
 .box3 {
   background-color: #01aefd;
   grid-area: three;
 }
+
 .box4 {
   background-color: #01aefd;
   grid-area: four;
 }
+
 .box5 {
   background-color: #05aa42;
   grid-area: five;
+}
+
+button {
+  margin: 40px 30px;
+  padding: 15px;
+  background: hsl(0, 0%, 95%);
+  border-radius: 50px;
+  border: none;
+  font-family: "Lexend Deca";
+}
+
+/* Media responsiness...Mobile Phones*/
+@media screen and (max-width: 425px) {
+  main {
+    width: 100%;
+  }
 }
